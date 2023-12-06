@@ -23,18 +23,6 @@ services:
       - ME_CONFIG_MONGODB_ADMINPASSWORD=root
       - ME_CONFIG_MONGODB_SERVER=mongodb      
   
-  backend:
-    build:
-      context: ./Backend
-    ports:
-      - 8000:8000
-
-  frontend:
-    build:
-      context: ./Frontend
-    ports: 
-      - 3000:3000
-  
 volumes:
   mongo-data:
     driver: local
