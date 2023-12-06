@@ -14,7 +14,7 @@ getVariables()
 {
     echo "Path:$path"
 
-}W
+}
 
 
 setVariables
