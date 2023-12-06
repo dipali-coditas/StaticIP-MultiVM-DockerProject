@@ -28,10 +28,6 @@ server {
      proxy_pass http://0.0.0.0:3000;
   }
 
-  location /get_data/ {
-     proxy_pass http://0.0.0.0:8000/get_data;
-  }
-
 }
 
 

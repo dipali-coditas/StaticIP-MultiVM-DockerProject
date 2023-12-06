@@ -1,4 +1,4 @@
-fetch('/get_data/')
+fetch('http://backendip:8000/get_data/')
   .then(res => res.json())
   .then(data => {
 
