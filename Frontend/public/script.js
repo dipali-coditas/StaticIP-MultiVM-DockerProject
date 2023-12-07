@@ -1,6 +1,4 @@
-// fetch('http://34.131.154.221:8000/get_data')
-
-fetch('/get_data')
+fetch('http://34.131.154.221:8000/get_data')
   .then(res => res.json())
   .then(data => {
 

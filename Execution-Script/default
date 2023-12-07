@@ -27,11 +27,6 @@ server {
   location / {
      proxy_pass http://0.0.0.0:3000;
   }
-
-  location /get_data {
-     proxy_pass http://34.131.207.249:8000/get_data;
-  }
-
 }
 
 

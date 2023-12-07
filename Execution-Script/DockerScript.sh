@@ -46,7 +46,7 @@ cd "$path"
 
 sudo docker-compose down && echo "Docker Is Down Now" || echo "Docker Already Down"
 
-sudo docker rmi StaticIP-MultiVM-DockerProject_frontend || echo "Error deleting frontend image"
+sudo docker rmi staticip-multivm-dockerproject_frontend_1 || echo "Error deleting frontend image"
 
 sudo docker-compose up -d || echo "error in compose file"
 
