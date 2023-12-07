@@ -30,7 +30,7 @@ cd "$path"
 
 sudo docker-compose down && echo "Docker Is Down Now" || echo "Docker Already Down"
 
-sudo docker rmi StaticIP-MultiVM-DockerProject_backend || echo "Error deleting backend image"
+sudo docker rmi staticip-multivm-dockerproject_backend || echo "Error deleting backend image"
 
 sudo docker-compose up -d || echo "error in compose file"
 
