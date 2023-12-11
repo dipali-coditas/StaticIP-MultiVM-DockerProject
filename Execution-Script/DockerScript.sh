@@ -7,7 +7,7 @@
 setVariables()
 {
     #defining directory path.
-    path="/home/ankitraut0987/StaticIP-MultiVM-DockerProject"
+    path="/home/dipali_dhanwade/StaticIP-MultiVM-DockerProject"
 }
 
 getVariables()
