@@ -12,6 +12,7 @@ setVariables()
     
     #defining nginx path
     nginx_path="/etc/nginx/sites-enabled"
+    echo "sites-enabled"
 
 }
 
