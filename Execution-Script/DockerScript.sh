@@ -8,7 +8,7 @@ setVariables()
 {
     #defining directory path.
     # path="/home/ubuntu/Node-Project"
-    path="/home/ankitraut0987/StaticIP-MultiVM-DockerProject"
+    path="/home/dipali_dhanwade/StaticIP-MultiVM-DockerProject"
     
     #defining nginx path
     nginx_path="/etc/nginx/sites-enabled"
