@@ -1,4 +1,4 @@
-fetch('http://35.244.15.94:8000/get_data')
+fetch('http://192.0.0.3:8000/get_data')
   .then(res => res.json())
   .then(data => {
 
