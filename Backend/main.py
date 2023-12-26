@@ -46,10 +46,11 @@ conn = psycopg2.connect(
 )
 
 # Create a cursor
-cursor = conn.cursor()
+# cursor = conn.cursor()
 
 @app.route('/get_data', methods=['GET'])
 def get_data():
+    cursor = conn.cursor()
     # Fetch data from PostgreSQL
     cursor.execute("SELECT * FROM products")
     data = cursor.fetchall()
