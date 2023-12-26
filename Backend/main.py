@@ -46,11 +46,11 @@ conn = psycopg2.connect(
 )
 
 # Create a cursor
-# cursor = conn.cursor()
+cursor = conn.cursor()
 
 @app.route('/get_data', methods=['GET'])
 def get_data():
-    cursor = conn.cursor()
+    # cursor = conn.cursor()
     # Fetch data from PostgreSQL
     cursor.execute("SELECT * FROM products")
     data = cursor.fetchall()
@@ -59,9 +59,9 @@ def get_data():
     keys = ["pid", "name", "price", "description", "image_url"]
     data_list = [dict(zip(keys, row)) for row in data]
 
-    conn.close()
 
     return jsonify(data_list)
+conn.close()
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", debug=True, port=8000)
