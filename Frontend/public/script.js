@@ -7,9 +7,9 @@ fetch('/get_data')
     data.forEach(product => {
       output += `
         <div class="product">
-          <img src="${product.img}" width="100">
+          <img src="${product.img_url}" width="100">
           <h3>${product.name}</h3>
-          <p>${product.desc}</p>
+          <p>${product.description}</p>
           <b>$${product.price}</b>
         </div>
       `;
