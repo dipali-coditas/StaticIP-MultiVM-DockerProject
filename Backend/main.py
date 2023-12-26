@@ -50,7 +50,6 @@ cursor = conn.cursor()
 
 @app.route('/get_data', methods=['GET'])
 def get_data():
-    conn.open()
     # Fetch data from PostgreSQL
     cursor.execute("SELECT * FROM products")
     data = cursor.fetchall()
@@ -58,7 +57,7 @@ def get_data():
     # Convert data to a list of dictionaries
     keys = ["pid", "name", "price", "description", "image_url"]
     data_list = [dict(zip(keys, row)) for row in data]
-    conn.close()
+    # conn.close()
 
     return jsonify(data_list)
 
