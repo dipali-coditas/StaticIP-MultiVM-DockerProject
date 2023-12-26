@@ -8,7 +8,7 @@ WORKDIR /app
 COPY . /app  
 
 # Install dependencies
-RUN pip install --trusted-host pypi.python.org flask flask_cors pymongo
+RUN pip install --trusted-host pypi.python.org flask flask_cors psycopg2
 
 # Make port 8000 available 
 EXPOSE 8000  
