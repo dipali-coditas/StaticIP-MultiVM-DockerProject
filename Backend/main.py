@@ -58,6 +58,8 @@ def get_data():
     keys = ["pid", "name", "price", "description", "image_url"]
     data_list = [dict(zip(keys, row)) for row in data]
 
+    conn.close()
+
     return jsonify(data_list)
 
 if __name__ == "__main__":
